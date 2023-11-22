@@ -14,7 +14,7 @@ export default function Share({ children }) {
 
   function onClick() {
     setIsPending(true);
-    setTimeout(() => shareContent(children), 1)
+    setTimeout(() => shareContent(children), 0)
     setTimeout(() => setIsPending(false), 100);
   }
 
